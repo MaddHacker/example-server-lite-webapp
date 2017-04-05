@@ -1,0 +1,39 @@
+{
+  "name": "example-server-lite-webapp",
+  "version": "0.5.0",
+  "description": "Example usage of server-lite npm to build a simple webapp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/MaddHacker/example-server-lite-webapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaddHacker/example-server-lite-webapp/issues",
+    "email": "hacker@maddhacker.com"
+  },
+  "keywords": [
+    "server",
+    "web server",
+    "webserver",
+    "example"
+  ],
+  "author": "MaddHacker <hacker@maddhacker.com> (http://www.maddhacker.com)",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/MaddHacker/example-server-lite-webapp#readme",
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=2.14.2"
+  },
+  "dependencies": {
+    "server-lite": "^0.5.0"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
