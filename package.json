@@ -1,6 +1,6 @@
 {
     "name": "example-server-lite-webapp",
-    "version": "0.9.0",
+    "version": "1.0.0",
     "description": "Example usage of server-lite npm to build a simple webapp.",
     "main": "index.js",
     "scripts": {
@@ -18,6 +18,17 @@
         "server",
         "web server",
         "webserver",
+        "SPA",
+        "SPA web server",
+        "SPA webserver",
+        "development webserver",
+        "static file webserver",
+        "concat",
+        "concatenation",
+        "concatenate",
+        "concatenate js",
+        "concatenate javascript",
+        "concatenate css",
         "example"
     ],
     "author": "MaddHacker <hacker@maddhacker.com> (http://www.maddhacker.com)",
@@ -28,7 +39,7 @@
         "npm": ">=2.14.2"
     },
     "dependencies": {
-        "server-lite": "^0.9.0"
+        "server-lite": "^1.0.0"
     },
     "devDependencies": {
         "jest": "^19.0.2"
