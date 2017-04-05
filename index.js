@@ -25,14 +25,8 @@ const om = require('output-manager');
 const o = new om.Out(); // console logging
 
 o.i('Starting...');
-
 const utilz = new sl.utils(o);
-
-const handler = new sl.handler(utilz);
-handler.webRoot = 'webapp';
-handler.indexPath = '/html/index.html';
-handler.concatenateJavscriptFolderPath = '/js/concat/';
-handler.concatenateCssFolderPath = '/css/concat/';
+const handler = new sl.handler(utilz, 'webapp', '/html/index.html', '/js/concat/', '/css/concat/');
 
 function onReq(request, response) {
     o.i('Recieved request...');
@@ -60,8 +54,5 @@ const cfg = new sl.config({
     onRequest: onReq
 });
 
-// |||jbariel TODO => there appears to be a bug in beta server-lite need to work out the kinks...
-//const httpSvr = new sl.server.slHttp(cfg);
-const httpSvr = new sl.server.slServer(cfg);
-
-httpSvr._start(require('http').createServer(onReq));
+const httpSvr = new sl.server.http(cfg);
+httpSvr.start();
