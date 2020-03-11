@@ -24,6 +24,7 @@ const stringz = require('string-utilz');
 const om = require('output-manager');
 const o = new om.Out(); // console logging
 
+o.level = om.LogLevel.TRACE;
 o.i('Starting...');
 const utilz = new sl.utils(o);
 const handler = new sl.handler(utilz, 'webapp', '/html/index.html', '/js/concat/', '/css/concat/');

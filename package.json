@@ -35,14 +35,14 @@
     "license": "Apache-2.0",
     "homepage": "https://github.com/MaddHacker/example-server-lite-webapp#readme",
     "engines": {
-        "node": ">=4.0.0",
-        "npm": ">=2.14.2"
+        "node": ">=10.0.0",
+        "npm": ">=5.0.0"
     },
     "dependencies": {
-        "server-lite": "^1.0.0"
+        "server-lite": "^1.2.0"
     },
     "devDependencies": {
-        "jest": "^19.0.2"
+        "jest": ">=25.1.0"
     },
     "jest": {
         "verbose": true
